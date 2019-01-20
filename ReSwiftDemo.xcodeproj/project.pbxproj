@@ -108,10 +108,9 @@
 		164962D221F4C5A40063C543 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
-				164962EA21F4D5B60063C543 /* Models */,
 				164962D521F4C5C40063C543 /* Actions */,
-				164962D421F4C5B80063C543 /* State */,
 				164962D321F4C5B00063C543 /* Reducers */,
+				164962D421F4C5B80063C543 /* State */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -188,6 +187,7 @@
 		1678942121F4BF7D002703FD /* ReSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				164962EA21F4D5B60063C543 /* Models */,
 				164962D221F4C5A40063C543 /* Redux */,
 				164962F921F4E5BD0063C543 /* SessionManager.swift */,
 				1678942221F4BF7D002703FD /* AppDelegate.swift */,
