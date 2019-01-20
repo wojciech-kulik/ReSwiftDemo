@@ -13,6 +13,8 @@
 		1678942A21F4BF7F002703FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1678942921F4BF7F002703FD /* Assets.xcassets */; };
 		1678942D21F4BF7F002703FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678942B21F4BF7F002703FD /* LaunchScreen.storyboard */; };
 		1678943821F4BF7F002703FD /* ReSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678943721F4BF7F002703FD /* ReSwiftDemoTests.swift */; };
+		2314A931BEE8A2FAD387670C /* Pods_ReSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73871C5F75EC87BA949A7D49 /* Pods_ReSwiftDemo.framework */; };
+		2A0AC10A60D38A7A341AF334 /* Pods_ReSwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C32A579C6069C14710D618 /* Pods_ReSwiftDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12C32A579C6069C14710D618 /* Pods_ReSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678941F21F4BF7D002703FD /* ReSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678942221F4BF7D002703FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1678942421F4BF7D002703FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		1678943321F4BF7F002703FD /* ReSwiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSwiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678943721F4BF7F002703FD /* ReSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftDemoTests.swift; sourceTree = "<group>"; };
 		1678943921F4BF7F002703FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AE4D9A53EDD0539AEF54DC2 /* Pods-ReSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftDemo/Pods-ReSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		361AEF46220AE965F5F4098F /* Pods-ReSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftDemo/Pods-ReSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6952431441FE19F05A690314 /* Pods-ReSwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftDemoTests/Pods-ReSwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		7190D372A2EE768C699DD834 /* Pods-ReSwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftDemoTests/Pods-ReSwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		73871C5F75EC87BA949A7D49 /* Pods_ReSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2314A931BEE8A2FAD387670C /* Pods_ReSwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0AC10A60D38A7A341AF334 /* Pods_ReSwiftDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08F076B659529A11E98991CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73871C5F75EC87BA949A7D49 /* Pods_ReSwiftDemo.framework */,
+				12C32A579C6069C14710D618 /* Pods_ReSwiftDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1678941621F4BF7D002703FD = {
 			isa = PBXGroup;
 			children = (
 				1678942121F4BF7D002703FD /* ReSwiftDemo */,
 				1678943621F4BF7F002703FD /* ReSwiftDemoTests */,
 				1678942021F4BF7D002703FD /* Products */,
+				40F9418066F77F68B01492F3 /* Pods */,
+				08F076B659529A11E98991CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +117,17 @@
 			path = ReSwiftDemoTests;
 			sourceTree = "<group>";
 		};
+		40F9418066F77F68B01492F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AE4D9A53EDD0539AEF54DC2 /* Pods-ReSwiftDemo.debug.xcconfig */,
+				361AEF46220AE965F5F4098F /* Pods-ReSwiftDemo.release.xcconfig */,
+				7190D372A2EE768C699DD834 /* Pods-ReSwiftDemoTests.debug.xcconfig */,
+				6952431441FE19F05A690314 /* Pods-ReSwiftDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1678943C21F4BF7F002703FD /* Build configuration list for PBXNativeTarget "ReSwiftDemo" */;
 			buildPhases = (
+				DABC2232B8E587EB78C17B28 /* [CP] Check Pods Manifest.lock */,
 				1678941B21F4BF7D002703FD /* Sources */,
 				1678941C21F4BF7D002703FD /* Frameworks */,
 				1678941D21F4BF7D002703FD /* Resources */,
+				601025FCF3DF037AF6BE366F /* [CP] Embed Pods Frameworks */,
+				A4FBFAEBD31F8E388ED0E92A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1678943F21F4BF7F002703FD /* Build configuration list for PBXNativeTarget "ReSwiftDemoTests" */;
 			buildPhases = (
+				8009FBA7158AD166BA095018 /* [CP] Check Pods Manifest.lock */,
 				1678942F21F4BF7F002703FD /* Sources */,
 				1678943021F4BF7F002703FD /* Frameworks */,
 				1678943121F4BF7F002703FD /* Resources */,
+				B9A51681C72CBEE84D2C7D38 /* [CP] Embed Pods Frameworks */,
+				E5CC9BB720E24C91D84BC9D2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +229,112 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		601025FCF3DF037AF6BE366F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftDemo/Pods-ReSwiftDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftDemo/Pods-ReSwiftDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8009FBA7158AD166BA095018 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReSwiftDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4FBFAEBD31F8E388ED0E92A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftDemo/Pods-ReSwiftDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9A51681C72CBEE84D2C7D38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftDemoTests/Pods-ReSwiftDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DABC2232B8E587EB78C17B28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReSwiftDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5CC9BB720E24C91D84BC9D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftDemoTests/Pods-ReSwiftDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1678941B21F4BF7D002703FD /* Sources */ = {
@@ -358,15 +502,13 @@
 		};
 		1678943D21F4BF7F002703FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE4D9A53EDD0539AEF54DC2 /* Pods-ReSwiftDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JT56B63DU5;
 				INFOPLIST_FILE = ReSwiftDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.wojciechkulik.ReSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -376,15 +518,13 @@
 		};
 		1678943E21F4BF7F002703FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 361AEF46220AE965F5F4098F /* Pods-ReSwiftDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JT56B63DU5;
 				INFOPLIST_FILE = ReSwiftDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.wojciechkulik.ReSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -394,17 +534,14 @@
 		};
 		1678944021F4BF7F002703FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7190D372A2EE768C699DD834 /* Pods-ReSwiftDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JT56B63DU5;
 				INFOPLIST_FILE = ReSwiftDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.wojciechkulik.ReSwiftDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -415,17 +552,14 @@
 		};
 		1678944121F4BF7F002703FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6952431441FE19F05A690314 /* Pods-ReSwiftDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JT56B63DU5;
 				INFOPLIST_FILE = ReSwiftDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.wojciechkulik.ReSwiftDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
