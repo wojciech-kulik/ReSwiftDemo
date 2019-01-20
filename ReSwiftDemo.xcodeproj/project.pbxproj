@@ -10,6 +10,18 @@
 		164962D121F4C4990063C543 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962D021F4C4990063C543 /* MainViewController.swift */; };
 		164962D721F4C5D00063C543 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962D621F4C5D00063C543 /* AppState.swift */; };
 		164962D921F4C5F20063C543 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962D821F4C5F20063C543 /* AppReducer.swift */; };
+		164962DF21F4CF6B0063C543 /* SessionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962DE21F4CF6B0063C543 /* SessionState.swift */; };
+		164962E121F4D0430063C543 /* SessionReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962E021F4D0430063C543 /* SessionReducer.swift */; };
+		164962E721F4D3660063C543 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962E621F4D3660063C543 /* NavigationState.swift */; };
+		164962E921F4D50C0063C543 /* EmptySessionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962E821F4D50C0063C543 /* EmptySessionAction.swift */; };
+		164962EC21F4D5BF0063C543 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962EB21F4D5BF0063C543 /* Screen.swift */; };
+		164962EE21F4D6090063C543 /* NavigationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962ED21F4D6090063C543 /* NavigationReducer.swift */; };
+		164962F021F4D85F0063C543 /* SessionRestoredAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962EF21F4D85F0063C543 /* SessionRestoredAction.swift */; };
+		164962F221F4DD720063C543 /* SignedInSuccessfullyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962F121F4DD720063C543 /* SignedInSuccessfullyAction.swift */; };
+		164962F421F4E06D0063C543 /* SigningInProgressAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962F321F4E06D0063C543 /* SigningInProgressAction.swift */; };
+		164962F621F4E1C70063C543 /* SignedOutSuccessfullyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962F521F4E1C70063C543 /* SignedOutSuccessfullyAction.swift */; };
+		164962F821F4E27A0063C543 /* SigningOutInProgressAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962F721F4E27A0063C543 /* SigningOutInProgressAction.swift */; };
+		164962FA21F4E5BD0063C543 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962F921F4E5BD0063C543 /* SessionManager.swift */; };
 		1678942321F4BF7D002703FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678942221F4BF7D002703FD /* AppDelegate.swift */; };
 		1678942521F4BF7D002703FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678942421F4BF7D002703FD /* LoginViewController.swift */; };
 		1678942821F4BF7D002703FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678942621F4BF7D002703FD /* Main.storyboard */; };
@@ -35,6 +47,18 @@
 		164962D021F4C4990063C543 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		164962D621F4C5D00063C543 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		164962D821F4C5F20063C543 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		164962DE21F4CF6B0063C543 /* SessionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionState.swift; sourceTree = "<group>"; };
+		164962E021F4D0430063C543 /* SessionReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionReducer.swift; sourceTree = "<group>"; };
+		164962E621F4D3660063C543 /* NavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		164962E821F4D50C0063C543 /* EmptySessionAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySessionAction.swift; sourceTree = "<group>"; };
+		164962EB21F4D5BF0063C543 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		164962ED21F4D6090063C543 /* NavigationReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationReducer.swift; sourceTree = "<group>"; };
+		164962EF21F4D85F0063C543 /* SessionRestoredAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRestoredAction.swift; sourceTree = "<group>"; };
+		164962F121F4DD720063C543 /* SignedInSuccessfullyAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInSuccessfullyAction.swift; sourceTree = "<group>"; };
+		164962F321F4E06D0063C543 /* SigningInProgressAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningInProgressAction.swift; sourceTree = "<group>"; };
+		164962F521F4E1C70063C543 /* SignedOutSuccessfullyAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedOutSuccessfullyAction.swift; sourceTree = "<group>"; };
+		164962F721F4E27A0063C543 /* SigningOutInProgressAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningOutInProgressAction.swift; sourceTree = "<group>"; };
+		164962F921F4E5BD0063C543 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		1678941F21F4BF7D002703FD /* ReSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678942221F4BF7D002703FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1678942421F4BF7D002703FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +108,7 @@
 		164962D221F4C5A40063C543 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
+				164962EA21F4D5B60063C543 /* Models */,
 				164962D521F4C5C40063C543 /* Actions */,
 				164962D421F4C5B80063C543 /* State */,
 				164962D321F4C5B00063C543 /* Reducers */,
@@ -95,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				164962D821F4C5F20063C543 /* AppReducer.swift */,
+				164962E021F4D0430063C543 /* SessionReducer.swift */,
+				164962ED21F4D6090063C543 /* NavigationReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -103,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				164962D621F4C5D00063C543 /* AppState.swift */,
+				164962DE21F4CF6B0063C543 /* SessionState.swift */,
+				164962E621F4D3660063C543 /* NavigationState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -110,8 +139,30 @@
 		164962D521F4C5C40063C543 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				164962FB21F4E85C0063C543 /* Session */,
 			);
 			path = Actions;
+			sourceTree = "<group>";
+		};
+		164962EA21F4D5B60063C543 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				164962EB21F4D5BF0063C543 /* Screen.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		164962FB21F4E85C0063C543 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				164962EF21F4D85F0063C543 /* SessionRestoredAction.swift */,
+				164962E821F4D50C0063C543 /* EmptySessionAction.swift */,
+				164962F121F4DD720063C543 /* SignedInSuccessfullyAction.swift */,
+				164962F321F4E06D0063C543 /* SigningInProgressAction.swift */,
+				164962F521F4E1C70063C543 /* SignedOutSuccessfullyAction.swift */,
+				164962F721F4E27A0063C543 /* SigningOutInProgressAction.swift */,
+			);
+			path = Session;
 			sourceTree = "<group>";
 		};
 		1678941621F4BF7D002703FD = {
@@ -138,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				164962D221F4C5A40063C543 /* Redux */,
+				164962F921F4E5BD0063C543 /* SessionManager.swift */,
 				1678942221F4BF7D002703FD /* AppDelegate.swift */,
 				1678942421F4BF7D002703FD /* LoginViewController.swift */,
 				164962D021F4C4990063C543 /* MainViewController.swift */,
@@ -382,11 +434,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164962DF21F4CF6B0063C543 /* SessionState.swift in Sources */,
+				164962F421F4E06D0063C543 /* SigningInProgressAction.swift in Sources */,
 				164962D121F4C4990063C543 /* MainViewController.swift in Sources */,
+				164962E921F4D50C0063C543 /* EmptySessionAction.swift in Sources */,
 				1678942521F4BF7D002703FD /* LoginViewController.swift in Sources */,
+				164962F021F4D85F0063C543 /* SessionRestoredAction.swift in Sources */,
+				164962F621F4E1C70063C543 /* SignedOutSuccessfullyAction.swift in Sources */,
+				164962EE21F4D6090063C543 /* NavigationReducer.swift in Sources */,
 				1678942321F4BF7D002703FD /* AppDelegate.swift in Sources */,
+				164962F221F4DD720063C543 /* SignedInSuccessfullyAction.swift in Sources */,
 				164962D721F4C5D00063C543 /* AppState.swift in Sources */,
+				164962F821F4E27A0063C543 /* SigningOutInProgressAction.swift in Sources */,
+				164962E721F4D3660063C543 /* NavigationState.swift in Sources */,
+				164962E121F4D0430063C543 /* SessionReducer.swift in Sources */,
 				164962D921F4C5F20063C543 /* AppReducer.swift in Sources */,
+				164962EC21F4D5BF0063C543 /* Screen.swift in Sources */,
+				164962FA21F4E5BD0063C543 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

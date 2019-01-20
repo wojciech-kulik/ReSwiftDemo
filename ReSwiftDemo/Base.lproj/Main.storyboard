@@ -40,9 +40,17 @@
                                     <action selector="loginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCv-bb-AmU"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bkp-nT-ZeN">
+                                <rect key="frame" x="177.5" y="211" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="6Rk-ZL-6JZ"/>
+                                    <constraint firstAttribute="width" constant="20" id="Rft-V2-xd4"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bkp-nT-ZeN" firstAttribute="top" secondItem="YaI-Se-TFJ" secondAttribute="bottom" constant="42" id="0cT-c4-wSe"/>
                             <constraint firstItem="Ufc-sg-3nl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="1Jt-9q-m2k"/>
                             <constraint firstItem="YaI-Se-TFJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="6kj-zG-zSz"/>
                             <constraint firstItem="Ufc-sg-3nl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="6yz-Gt-ua1"/>
@@ -50,12 +58,15 @@
                             <constraint firstItem="lsW-cL-hN3" firstAttribute="top" secondItem="YaI-Se-TFJ" secondAttribute="bottom" constant="37" id="Ggs-rf-M0c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ufc-sg-3nl" secondAttribute="trailing" constant="80" id="IKG-nt-mty"/>
                             <constraint firstItem="lsW-cL-hN3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XuQ-2o-Se4"/>
+                            <constraint firstItem="bkp-nT-ZeN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fc0-fv-ct5"/>
                             <constraint firstItem="YaI-Se-TFJ" firstAttribute="top" secondItem="Ufc-sg-3nl" secondAttribute="bottom" constant="24" id="m8i-DS-muH"/>
                             <constraint firstItem="Ufc-sg-3nl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pPq-gt-iUI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="bkp-nT-ZeN" id="wTX-nz-XoL"/>
+                        <outlet property="loginButton" destination="lsW-cL-hN3" id="KxN-kO-dax"/>
                         <outlet property="loginTextField" destination="Ufc-sg-3nl" id="FJl-sh-UY7"/>
                         <outlet property="passwordTextField" destination="YaI-Se-TFJ" id="u6f-dO-W9e"/>
                     </connections>
@@ -84,18 +95,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ms-e9-nGL">
+                                <rect key="frame" x="131" y="237" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="Clk-Av-ZjC"/>
+                                </constraints>
+                                <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="logOutClicked:" destination="V49-p9-YYf" eventType="touchUpInside" id="aTy-l0-nsU"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jkv-9D-UlY">
+                                <rect key="frame" x="177.5" y="242" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="BXW-zd-X4Z"/>
+                                    <constraint firstAttribute="height" constant="20" id="gKD-5M-ccW"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="jkv-9D-UlY" firstAttribute="top" secondItem="I7a-A5-ICw" secondAttribute="bottom" constant="56" id="9T3-M5-ZeH"/>
+                            <constraint firstItem="jkv-9D-UlY" firstAttribute="centerX" secondItem="LQS-4v-wkU" secondAttribute="centerX" id="BRw-fU-wxh"/>
+                            <constraint firstItem="2ms-e9-nGL" firstAttribute="top" secondItem="I7a-A5-ICw" secondAttribute="bottom" constant="51" id="NQH-NF-1VG"/>
                             <constraint firstItem="I7a-A5-ICw" firstAttribute="top" secondItem="b8C-G4-fzV" secondAttribute="bottom" constant="46" id="TQB-L8-pxw"/>
                             <constraint firstItem="I7a-A5-ICw" firstAttribute="centerX" secondItem="LQS-4v-wkU" secondAttribute="centerX" id="gNy-xo-aXz"/>
                             <constraint firstItem="b8C-G4-fzV" firstAttribute="top" secondItem="LQS-4v-wkU" secondAttribute="top" constant="78" id="jnY-GH-kWs"/>
                             <constraint firstItem="b8C-G4-fzV" firstAttribute="centerX" secondItem="LQS-4v-wkU" secondAttribute="centerX" id="kjJ-D5-0JJ"/>
+                            <constraint firstItem="2ms-e9-nGL" firstAttribute="centerX" secondItem="LQS-4v-wkU" secondAttribute="centerX" id="qFm-E8-Pnp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LQS-4v-wkU"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="jkv-9D-UlY" id="P1Z-zn-KBS"/>
                         <outlet property="infoLabel" destination="I7a-A5-ICw" id="0Lq-rq-Pab"/>
+                        <outlet property="logOutButton" destination="2ms-e9-nGL" id="iMT-M1-qWd"/>
                         <outlet property="usernameLabel" destination="b8C-G4-fzV" id="4Ju-zs-DSD"/>
                     </connections>
                 </viewController>
