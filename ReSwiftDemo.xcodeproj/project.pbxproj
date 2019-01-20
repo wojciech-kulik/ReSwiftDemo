@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		164962D121F4C4990063C543 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962D021F4C4990063C543 /* MainViewController.swift */; };
+		164962D721F4C5D00063C543 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962D621F4C5D00063C543 /* AppState.swift */; };
+		164962D921F4C5F20063C543 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962D821F4C5F20063C543 /* AppReducer.swift */; };
 		1678942321F4BF7D002703FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678942221F4BF7D002703FD /* AppDelegate.swift */; };
-		1678942521F4BF7D002703FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678942421F4BF7D002703FD /* ViewController.swift */; };
+		1678942521F4BF7D002703FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678942421F4BF7D002703FD /* LoginViewController.swift */; };
 		1678942821F4BF7D002703FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678942621F4BF7D002703FD /* Main.storyboard */; };
 		1678942A21F4BF7F002703FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1678942921F4BF7F002703FD /* Assets.xcassets */; };
 		1678942D21F4BF7F002703FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678942B21F4BF7F002703FD /* LaunchScreen.storyboard */; };
@@ -29,9 +32,12 @@
 
 /* Begin PBXFileReference section */
 		12C32A579C6069C14710D618 /* Pods_ReSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		164962D021F4C4990063C543 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		164962D621F4C5D00063C543 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		164962D821F4C5F20063C543 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		1678941F21F4BF7D002703FD /* ReSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678942221F4BF7D002703FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1678942421F4BF7D002703FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1678942421F4BF7D002703FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1678942721F4BF7D002703FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1678942921F4BF7F002703FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1678942C21F4BF7F002703FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +81,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		164962D221F4C5A40063C543 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				164962D521F4C5C40063C543 /* Actions */,
+				164962D421F4C5B80063C543 /* State */,
+				164962D321F4C5B00063C543 /* Reducers */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		164962D321F4C5B00063C543 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				164962D821F4C5F20063C543 /* AppReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		164962D421F4C5B80063C543 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				164962D621F4C5D00063C543 /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		164962D521F4C5C40063C543 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
 		1678941621F4BF7D002703FD = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +137,10 @@
 		1678942121F4BF7D002703FD /* ReSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				164962D221F4C5A40063C543 /* Redux */,
 				1678942221F4BF7D002703FD /* AppDelegate.swift */,
-				1678942421F4BF7D002703FD /* ViewController.swift */,
+				1678942421F4BF7D002703FD /* LoginViewController.swift */,
+				164962D021F4C4990063C543 /* MainViewController.swift */,
 				1678942621F4BF7D002703FD /* Main.storyboard */,
 				1678942921F4BF7F002703FD /* Assets.xcassets */,
 				1678942B21F4BF7F002703FD /* LaunchScreen.storyboard */,
@@ -341,8 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1678942521F4BF7D002703FD /* ViewController.swift in Sources */,
+				164962D121F4C4990063C543 /* MainViewController.swift in Sources */,
+				1678942521F4BF7D002703FD /* LoginViewController.swift in Sources */,
 				1678942321F4BF7D002703FD /* AppDelegate.swift in Sources */,
+				164962D721F4C5D00063C543 /* AppState.swift in Sources */,
+				164962D921F4C5F20063C543 /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +552,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JT56B63DU5;
 				INFOPLIST_FILE = ReSwiftDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = pl.wojciechkulik.ReSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -524,7 +571,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JT56B63DU5;
 				INFOPLIST_FILE = ReSwiftDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = pl.wojciechkulik.ReSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -541,7 +591,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JT56B63DU5;
 				INFOPLIST_FILE = ReSwiftDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = pl.wojciechkulik.ReSwiftDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -559,7 +613,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JT56B63DU5;
 				INFOPLIST_FILE = ReSwiftDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = pl.wojciechkulik.ReSwiftDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
