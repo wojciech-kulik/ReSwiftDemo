@@ -17,6 +17,7 @@ extension Reducers {
             
         case is SignOutActions.SignedOut:
             state.token = nil
+            state.user = nil
             
         default:
             break

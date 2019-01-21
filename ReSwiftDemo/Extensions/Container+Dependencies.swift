@@ -23,11 +23,12 @@ extension Container {
     
     private func registerManagers() {
         AppDelegate.container.autoregister(SessionManager.self, initializer: SessionManager.init).inObjectScope(.container)
+        AppDelegate.container.autoregister(FlowManager.self, initializer: FlowManager.init).inObjectScope(.container)
     }
     
     private func getInitialState() -> AppState {
         return AppState(
-            navigationState: NavigationState(screen: .launching),
+            flowState: FlowState(flow: .splashScreen),
             sessionState: SessionState()
         )
     }

@@ -3,15 +3,15 @@ import ReSwift
 
 extension Reducers {
     
-    static func navigationReducer(action: Action, state: NavigationState?) -> NavigationState {
-        var state = state ?? NavigationState(screen: .launching)
+    static func flowReducer(action: Action, state: FlowState?) -> FlowState {
+        var state = state ?? FlowState(flow: .splashScreen)
         
         switch action {
         case is SignInActions.SignedIn:
-            state.screen = .dashboard
+            state.flow = .dashboard
             
         case is SignInActions.NoSession, is SignOutActions.SignedOut:
-            state.screen = .signIn
+            state.flow = .signIn
             
         default:
             break

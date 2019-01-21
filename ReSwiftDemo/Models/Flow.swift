@@ -1,7 +1,7 @@
 import Foundation
 
-enum Screen {
-    case launching
+enum Flow {
+    case splashScreen
     case signIn
     case dashboard
 }

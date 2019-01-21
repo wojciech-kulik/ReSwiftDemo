@@ -7,7 +7,7 @@ struct Reducers {
     
     static func appReducer(action: Action, state: AppState?) -> AppState {
         return AppState(
-            navigationState: Reducers.navigationReducer(action: action, state: state?.navigationState),
+            flowState: Reducers.flowReducer(action: action, state: state?.flowState),
             sessionState: Reducers.sessionReducer(action: action, state: state?.sessionState)
         )
     }
