@@ -8,19 +8,14 @@ extension Reducers {
         state.inProgress = false
         
         switch action {
-        case is SigningInProgressAction, is SigningOutProgressAction:
+        case is SignInActions.SigningIn, is SignOutActions.SigningOut:
             state.inProgress = true
             
-        case let action as SignedInSuccessfullyAction:
-            state.authenticated = true
+        case let action as SignInActions.SignedIn:
             state.token = action.token
+            state.user = action.user
             
-        case let action as SessionRestoredAction:
-            state.authenticated = true
-            state.token = action.token
-            
-        case is SignedOutSuccessfullyAction:
-            state.authenticated = false
+        case is SignOutActions.SignedOut:
             state.token = nil
             
         default:

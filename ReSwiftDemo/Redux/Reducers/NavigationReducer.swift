@@ -7,10 +7,10 @@ extension Reducers {
         var state = state ?? NavigationState(screen: .launching)
         
         switch action {
-        case is SignedInSuccessfullyAction, is SessionRestoredAction:
+        case is SignInActions.SignedIn:
             state.screen = .dashboard
             
-        case is EmptySessionAction, is SignedOutSuccessfullyAction:
+        case is SignInActions.NoSession, is SignOutActions.SignedOut:
             state.screen = .signIn
             
         default:

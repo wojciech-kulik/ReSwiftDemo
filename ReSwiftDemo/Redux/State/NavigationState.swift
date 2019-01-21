@@ -1,6 +1,6 @@
 import Foundation
 import ReSwift
 
-struct NavigationState: StateType {
+struct NavigationState: StateType, Equatable {
     var screen: Screen
 }

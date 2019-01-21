@@ -1,7 +1,7 @@
 import Foundation
 import ReSwift
 
-struct AppState: StateType {
+struct AppState: StateType, Equatable {
     let navigationState: NavigationState
     let sessionState: SessionState
 }
