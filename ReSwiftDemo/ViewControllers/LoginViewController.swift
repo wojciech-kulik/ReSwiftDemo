@@ -39,5 +39,13 @@ extension LoginViewController: StoreSubscriber {
         }
         
         self.loginButton.isHidden = state.sessionState.inProgress
+        self.loginTextField.isEnabled = !state.sessionState.inProgress
+        self.passwordTextField.isEnabled = !state.sessionState.inProgress
+        
+        if let error = state.sessionState.error {
+            self.displayError(title: error.title, message: error.message) {
+                self.store.dispatch(SignInActions.DismissedError())
+            }
+        }
     }
 }

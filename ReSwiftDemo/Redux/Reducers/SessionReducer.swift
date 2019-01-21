@@ -5,6 +5,7 @@ extension Reducers {
     
     static func sessionReducer(action: Action, state: SessionState?) -> SessionState {
         var state = state ?? SessionState()
+        
         state.inProgress = false
         
         switch action {
@@ -18,6 +19,12 @@ extension Reducers {
         case is SignOutActions.SignedOut:
             state.token = nil
             state.user = nil
+            
+        case let action as SignInActions.SignInFailed:
+            state.error = action.error
+            
+        case is SignInActions.DismissedError:
+            state.error = nil
             
         default:
             break

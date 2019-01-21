@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1630FF8721F66EB8004928DB /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1630FF8621F66EB8004928DB /* ErrorMessage.swift */; };
+		1630FF8921F67019004928DB /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1630FF8821F67019004928DB /* ViewController+Alert.swift */; };
 		164962D121F4C4990063C543 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962D021F4C4990063C543 /* MainViewController.swift */; };
 		164962D721F4C5D00063C543 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962D621F4C5D00063C543 /* AppState.swift */; };
 		164962D921F4C5F20063C543 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962D821F4C5F20063C543 /* AppReducer.swift */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		12C32A579C6069C14710D618 /* Pods_ReSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1630FF8621F66EB8004928DB /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		1630FF8821F67019004928DB /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
 		164962D021F4C4990063C543 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		164962D621F4C5D00063C543 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		164962D821F4C5F20063C543 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			children = (
 				164962EB21F4D5BF0063C543 /* Flow.swift */,
 				16E1D4A321F544F800C588C3 /* User.swift */,
+				1630FF8621F66EB8004928DB /* ErrorMessage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				16E1D49E21F542A600C588C3 /* Container+Dependencies.swift */,
+				1630FF8821F67019004928DB /* ViewController+Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -482,12 +488,14 @@
 				16E1D4A421F544F800C588C3 /* User.swift in Sources */,
 				164962D721F4C5D00063C543 /* AppState.swift in Sources */,
 				164962E721F4D3660063C543 /* FlowState.swift in Sources */,
+				1630FF8921F67019004928DB /* ViewController+Alert.swift in Sources */,
 				164962E121F4D0430063C543 /* SessionReducer.swift in Sources */,
 				164962D921F4C5F20063C543 /* AppReducer.swift in Sources */,
 				16E1D49321F534D300C588C3 /* SignOutActions.swift in Sources */,
 				16E1D49F21F542A600C588C3 /* Container+Dependencies.swift in Sources */,
 				164962EC21F4D5BF0063C543 /* Flow.swift in Sources */,
 				164962FA21F4E5BD0063C543 /* SessionManager.swift in Sources */,
+				1630FF8721F66EB8004928DB /* ErrorMessage.swift in Sources */,
 				16E1D49C21F53D3D00C588C3 /* AppUserInteractions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

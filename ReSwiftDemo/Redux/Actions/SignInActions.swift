@@ -8,7 +8,7 @@ struct SignInActions {
     struct SigningIn: Action { }
     
     struct SignInFailed: Action {
-        let error: String
+        let error: ErrorMessage
     }
     
     struct DismissedError: Action { }

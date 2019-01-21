@@ -13,7 +13,13 @@ class SessionUserInteractions {
         self.dispatcher.dispatch(SignInActions.SigningIn())
         
         DispatchQueue.main.asyncAfter(wallDeadline: .now() + 2) { [weak self] in
-            self?.dispatcher.dispatch(SignInActions.SignedIn(token: "12356sadas123", user: User(firstName: "John", lastName: "Snow")))
+            if username != "" && username == password {
+                self?.dispatcher.dispatch(
+                    SignInActions.SignedIn(token: "12356sadas123", user: User(firstName: "John", lastName: "Snow")))
+            } else {
+                self?.dispatcher.dispatch(
+                    SignInActions.SignInFailed(error: ErrorMessage(title: "Error", message: "Invalid credentials")))
+            }
         }
     }
     
