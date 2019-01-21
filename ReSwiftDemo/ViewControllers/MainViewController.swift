@@ -9,8 +9,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var logOutButton: UIButton!
     
-    let store: Store<AppState> = AppDelegate.container.resolve(Store<AppState>.self)!
-    let sessionUserInteractions: SessionUserInteractions = AppDelegate.container.resolve(SessionUserInteractions.self)!
+    var store: Store<AppState>!
+    var sessionUserInteractions: SessionUserInteractions!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -27,7 +27,7 @@ class MainViewController: UIViewController {
     }
 }
 
-
+// MARK: state management
 extension MainViewController: StoreSubscriber {
     
     func newState(state: AppState) {

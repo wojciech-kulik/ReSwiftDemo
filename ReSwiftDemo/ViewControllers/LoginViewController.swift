@@ -8,12 +8,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var loginButton: UIButton!
     
-    let store: Store<AppState> = AppDelegate.container.resolve(Store<AppState>.self)!
-    let sessionUserInteractions: SessionUserInteractions = AppDelegate.container.resolve(SessionUserInteractions.self)!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    var store: Store<AppState>!
+    var sessionUserInteractions: SessionUserInteractions!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -32,7 +28,7 @@ class LoginViewController: UIViewController {
     }
 }
 
-
+// MARK: state management
 extension LoginViewController: StoreSubscriber {
     
     func newState(state: AppState) {

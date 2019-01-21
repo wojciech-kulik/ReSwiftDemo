@@ -1,5 +1,6 @@
 import Foundation
 import Swinject
+import SwinjectStoryboard
 import ReSwift
 
 extension Container {
@@ -8,22 +9,35 @@ extension Container {
         self.registerRedux()
         self.registerUserInteractions()
         self.registerManagers()
+        self.registerViewControllers()
     }
     
     private func registerRedux() {
         let store = Store(reducer: Reducers.appReducer, state: self.getInitialState(), middleware: [self.loggingMiddleware()])
-        AppDelegate.container.register(Store.self) { _ in store }.inObjectScope(.container)
-        AppDelegate.container.register(DispatchingStoreType.self) { _ in store }.inObjectScope(.container)
+        self.register(Store.self) { _ in store }.inObjectScope(.container)
+        self.register(DispatchingStoreType.self) { _ in store }.inObjectScope(.container)
     }
 	
     private func registerUserInteractions() {
-        AppDelegate.container.autoregister(SessionUserInteractions.self, initializer: SessionUserInteractions.init).inObjectScope(.container)
-        AppDelegate.container.autoregister(AppUserInteractions.self, initializer: AppUserInteractions.init).inObjectScope(.container)
+        self.autoregister(SessionUserInteractions.self, initializer: SessionUserInteractions.init).inObjectScope(.container)
+        self.autoregister(AppUserInteractions.self, initializer: AppUserInteractions.init).inObjectScope(.container)
     }
     
     private func registerManagers() {
-        AppDelegate.container.autoregister(SessionManager.self, initializer: SessionManager.init).inObjectScope(.container)
-        AppDelegate.container.autoregister(FlowManager.self, initializer: FlowManager.init).inObjectScope(.container)
+        self.autoregister(SessionManager.self, initializer: SessionManager.init).inObjectScope(.container)
+        self.autoregister(FlowManager.self, initializer: FlowManager.init).inObjectScope(.container)
+    }
+    
+    private func registerViewControllers() {
+        self.storyboardInitCompleted(MainViewController.self) { resolver, viewController in
+            viewController.store = resolver.resolve(Store<AppState>.self)
+            viewController.sessionUserInteractions = resolver.resolve(SessionUserInteractions.self)
+        }
+        
+        self.storyboardInitCompleted(LoginViewController.self) { resolver, viewController in
+            viewController.store = resolver.resolve(Store<AppState>.self)
+            viewController.sessionUserInteractions = resolver.resolve(SessionUserInteractions.self)
+        }
     }
     
     private func getInitialState() -> AppState {

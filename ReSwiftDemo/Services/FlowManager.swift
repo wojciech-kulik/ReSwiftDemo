@@ -1,6 +1,7 @@
 import Foundation
 import ReSwift
 import UIKit
+import SwinjectStoryboard
 
 class FlowManager: StoreSubscriber {
 	
@@ -32,7 +33,7 @@ class FlowManager: StoreSubscriber {
     }
     
     func showScreen(name: String) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = SwinjectStoryboard.create(name: "Main", bundle: nil, container: AppDelegate.container)
         let rootController = storyboard.instantiateViewController(withIdentifier: name)
         
         if let window = UIApplication.shared.windows.first {
