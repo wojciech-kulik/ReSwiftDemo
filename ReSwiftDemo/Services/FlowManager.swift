@@ -5,9 +5,11 @@ import UIKit
 class FlowManager: StoreSubscriber {
 	
     private let store: Store<AppState>
+    private let appUserInteractions: AppUserInteractions
     
-    init(store: Store<AppState>) {
+    init(store: Store<AppState>, appUserInteractions: AppUserInteractions) {
         self.store = store
+        self.appUserInteractions = appUserInteractions
         self.subscribe()
     }
     
@@ -21,7 +23,7 @@ class FlowManager: StoreSubscriber {
         print("Set Flow: \(state.flow)")
         
         if state.flow == .splashScreen {
-            // do nothing
+            self.appUserInteractions.launchApp()
         } else if state.flow == .signIn {
             self.showScreen(name: "LoginViewController")
         } else if state.flow == .dashboard {

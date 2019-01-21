@@ -14,9 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AppDelegate.container.registerDependencies()
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        
         self.flowManager = AppDelegate.container.resolve(FlowManager.self)
-        AppDelegate.container.resolve(AppUserInteractions.self)?.launchApp()
         
         return true
     }
