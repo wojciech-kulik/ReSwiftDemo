@@ -1,6 +1,7 @@
 import Foundation
 
-struct User: Equatable, Codable {
+struct Session: Equatable, Codable {
+    let token: String
     let firstName: String
     let lastName: String
 }

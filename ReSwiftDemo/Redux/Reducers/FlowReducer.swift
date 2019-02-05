@@ -4,19 +4,16 @@ import ReSwift
 extension Reducers {
     
     static func flowReducer(action: Action, state: FlowState?) -> FlowState {
-        var state = state ?? FlowState(flow: .splashScreen)
         
         switch action {
-        case is SignInActions.SignedIn:
-            state.flow = .dashboard
+        case is SessionActions.SetSession:
+            return FlowState(flow: .dashboard)
             
-        case is SignInActions.NoSession, is SignOutActions.SignedOut:
-            state.flow = .signIn
+        case is SessionActions.NoSession:
+            return FlowState(flow: .signIn)
             
         default:
-            break
+            return state ?? FlowState()
         }
-        
-        return state
     }
 }

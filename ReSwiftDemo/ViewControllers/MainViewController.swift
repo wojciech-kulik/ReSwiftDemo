@@ -10,11 +10,12 @@ class MainViewController: UIViewController {
     @IBOutlet weak var logOutButton: UIButton!
     
     var store: Store<AppState>!
-    var sessionUserInteractions: SessionUserInteractions!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.store.subscribe(self)
+        self.store.subscribe(self) { subscription in
+            subscription.select { $0.sessionState }.skipRepeats()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -23,25 +24,25 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func logOutClicked(_ sender: Any) {
-        self.sessionUserInteractions.signOut()
+        self.set(inProgress: true)
+        self.store.dispatch(SessionActions.SignOut())
+    }
+    
+    private func set(inProgress: Bool) {
+        inProgress
+            ? self.activityIndicator.startAnimating()
+            : self.activityIndicator.stopAnimating()
+        
+        self.logOutButton.isHidden = inProgress
     }
 }
 
 // MARK: state management
 extension MainViewController: StoreSubscriber {
-    
-    func newState(state: AppState) {
-        if state.sessionState.inProgress {
-            self.activityIndicator.startAnimating()
-        } else {
-            self.activityIndicator.stopAnimating()
-        }
-        
-        self.logOutButton.isHidden = state.sessionState.inProgress
-        
-        if let user = state.sessionState.user {
-            self.usernameLabel.text = user.firstName + " " + user.lastName
-            self.infoLabel.text = "token: \(state.sessionState.token ?? "n/a")"
+    func newState(state: SessionState) {
+        if let session = state.session {
+            self.usernameLabel.text = session.firstName + " " + session.lastName
+            self.infoLabel.text = "token: \(session.token)"
         }
     }
 }

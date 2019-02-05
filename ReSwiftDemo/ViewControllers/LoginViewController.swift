@@ -9,7 +9,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     var store: Store<AppState>!
-    var sessionUserInteractions: SessionUserInteractions!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -22,9 +21,22 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginClicked(_ sender: Any) {
-        self.sessionUserInteractions.signIn(
+        self.set(inProgress: true)
+        
+        let credentials = Credentials(
             username: self.loginTextField.text ?? "",
             password: self.passwordTextField.text ?? "")
+        self.store.dispatch(SessionActions.SignIn(credentials: credentials))
+    }
+    
+    private func set(inProgress: Bool) {
+        inProgress
+            ? self.activityIndicator.startAnimating()
+            : self.activityIndicator.stopAnimating()
+        
+        self.loginButton.isHidden = inProgress
+        self.loginTextField.isEnabled = !inProgress
+        self.passwordTextField.isEnabled = !inProgress
     }
 }
 
@@ -32,19 +44,10 @@ class LoginViewController: UIViewController {
 extension LoginViewController: StoreSubscriber {
     
     func newState(state: AppState) {
-        if state.sessionState.inProgress {
-            self.activityIndicator.startAnimating()
-        } else {
-            self.activityIndicator.stopAnimating()
-        }
-        
-        self.loginButton.isHidden = state.sessionState.inProgress
-        self.loginTextField.isEnabled = !state.sessionState.inProgress
-        self.passwordTextField.isEnabled = !state.sessionState.inProgress
-        
-        if let error = state.sessionState.error {
+        if let error = state.error {
+            self.set(inProgress: false)
             self.displayError(title: error.title, message: error.message) {
-                self.store.dispatch(SignInActions.DismissedError())
+                self.store.dispatch(AlertActions.ErrorDismissed(error: error))
             }
         }
     }
