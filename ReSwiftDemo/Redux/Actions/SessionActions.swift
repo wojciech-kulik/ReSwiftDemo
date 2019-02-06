@@ -9,16 +9,12 @@ enum SessionActions {
         let session: Session
     }
     
-    struct SignIn: ApiRequest {
+    struct SignIn: ApiRequestWithResponse {
         let credentials: Credentials
-        let onSuccess: (Any?) -> [Action] = { session in
-            guard let session = session as? Session else { return [] }
-            return [SetSession(session: session)]
-        }
-        
+        let onSuccess: (Session) -> [Action] = { [SetSession(session: $0)] }
     }
     
-    struct SignOut: ApiRequest {
-        let onSuccess: (Any?) -> [Action] = { _ in [NoSession()] }
+    struct SignOut: ApiRequestNoResponse {
+        let onSuccess: () -> [Action] = { [NoSession()] }
     }
 }

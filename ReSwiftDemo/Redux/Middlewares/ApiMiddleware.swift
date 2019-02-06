@@ -20,7 +20,7 @@ extension Middlewares {
                             
                             if username != "" && username == password {
                                 let session = Session(token: "12356sadas123", firstName: "John", lastName: "Snow")
-                                apiRequest.onSuccess(session).forEach(dispatch)
+                                signInAction.onSuccess(session).forEach(dispatch)
                             } else {
                                 let error = ApiRequestError(
                                     apiRequest: apiRequest,
@@ -28,8 +28,8 @@ extension Middlewares {
                                 dispatch(error)
                             }
                             
-                        case is SessionActions.SignOut:
-                            apiRequest.onSuccess(nil).forEach(dispatch)
+                        case let signOutAction as SessionActions.SignOut:
+                            signOutAction.onSuccess().forEach(dispatch)
                             
                         default:
                             break
