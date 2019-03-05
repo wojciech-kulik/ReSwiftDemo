@@ -21,10 +21,12 @@ class SampleRestClient: NetworkClient {
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
             
-            if 200..<300 ~= statusCode && error == nil {
-                request.onSuccess(response: data).forEach(dispatch)
-            } else {
-                request.onFailure(response: data).forEach(dispatch)
+            DispatchQueue.main.async {
+                if 200..<300 ~= statusCode && error == nil {
+                    request.onSuccess(response: data).forEach(dispatch)
+                } else {
+                    request.onFailure(response: data).forEach(dispatch)
+                }
             }
         }
         task.resume()
