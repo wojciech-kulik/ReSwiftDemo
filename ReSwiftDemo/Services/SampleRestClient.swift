@@ -15,6 +15,7 @@ class SampleRestClient: NetworkClient {
         
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = request.method.rawValue
+        urlRequest.httpBody = request.json
         // set additional headers if needed
         
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
