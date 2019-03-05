@@ -46,7 +46,7 @@ extension LoginViewController: StoreSubscriber {
     func newState(state: AppState) {
         if let error = state.error {
             self.set(inProgress: false)
-            self.displayError(title: error.title, message: error.message) {
+            self.display(error: error) {
                 self.store.dispatch(AlertActions.ErrorDismissed(error: error))
             }
         }

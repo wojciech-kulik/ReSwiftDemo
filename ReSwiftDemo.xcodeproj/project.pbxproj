@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		161043EB220B5345008778D9 /* ApiRequestWithResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161043EA220B5345008778D9 /* ApiRequestWithResponse.swift */; };
-		161043ED220B5351008778D9 /* ApiRequestNoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161043EC220B5351008778D9 /* ApiRequestNoResponse.swift */; };
 		1630FF8721F66EB8004928DB /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1630FF8621F66EB8004928DB /* ErrorMessage.swift */; };
 		1630FF8921F67019004928DB /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1630FF8821F67019004928DB /* ViewController+Alert.swift */; };
 		163B3CB9220A00E900F6BACC /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163B3CB8220A00E900F6BACC /* ApiRequest.swift */; };
-		163B3CBB220A010100F6BACC /* ApiRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163B3CBA220A010100F6BACC /* ApiRequestError.swift */; };
 		163B3CBD220A019A00F6BACC /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163B3CBC220A019A00F6BACC /* Session.swift */; };
 		163B3CBF220A025D00F6BACC /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163B3CBE220A025D00F6BACC /* Credentials.swift */; };
 		163B3CC1220A054E00F6BACC /* AlertActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163B3CC0220A054E00F6BACC /* AlertActions.swift */; };
@@ -35,10 +32,18 @@
 		1678942A21F4BF7F002703FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1678942921F4BF7F002703FD /* Assets.xcassets */; };
 		1678942D21F4BF7F002703FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678942B21F4BF7F002703FD /* LaunchScreen.storyboard */; };
 		1678943821F4BF7F002703FD /* ReSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678943721F4BF7F002703FD /* ReSwiftDemoTests.swift */; };
+		168A77B5222EFC6200DE50CD /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77B4222EFC6200DE50CD /* RestRequest.swift */; };
+		168A77B7222EFCB000DE50CD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77B6222EFCB000DE50CD /* NetworkClient.swift */; };
+		168A77B9222EFFAC00DE50CD /* SampleRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77B8222EFFAC00DE50CD /* SampleRestClient.swift */; };
 		16BB54E121F666CB00E6B4B9 /* FlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB54E021F666CB00E6B4B9 /* FlowManager.swift */; };
 		16E1D49F21F542A600C588C3 /* Container+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1D49E21F542A600C588C3 /* Container+Dependencies.swift */; };
 		2314A931BEE8A2FAD387670C /* Pods_ReSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73871C5F75EC87BA949A7D49 /* Pods_ReSwiftDemo.framework */; };
 		2A0AC10A60D38A7A341AF334 /* Pods_ReSwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C32A579C6069C14710D618 /* Pods_ReSwiftDemoTests.framework */; };
+		7BD0397C222EAF2200BE14AA /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD0397B222EAF2200BE14AA /* HttpMethod.swift */; };
+		7BD0397E222EAF7600BE14AA /* Codable+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD0397D222EAF7600BE14AA /* Codable+Json.swift */; };
+		7BD03980222EB02000BE14AA /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD0397F222EB02000BE14AA /* ErrorResponse.swift */; };
+		7BD03984222EB2C300BE14AA /* Data+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD03983222EB2C300BE14AA /* Data+Json.swift */; };
+		7BD03986222EB9A600BE14AA /* FakeRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD03985222EB9A600BE14AA /* FakeRestClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +58,9 @@
 
 /* Begin PBXFileReference section */
 		12C32A579C6069C14710D618 /* Pods_ReSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		161043EA220B5345008778D9 /* ApiRequestWithResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestWithResponse.swift; sourceTree = "<group>"; };
-		161043EC220B5351008778D9 /* ApiRequestNoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestNoResponse.swift; sourceTree = "<group>"; };
 		1630FF8621F66EB8004928DB /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		1630FF8821F67019004928DB /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
 		163B3CB8220A00E900F6BACC /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
-		163B3CBA220A010100F6BACC /* ApiRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestError.swift; sourceTree = "<group>"; };
 		163B3CBC220A019A00F6BACC /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		163B3CBE220A025D00F6BACC /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		163B3CC0220A054E00F6BACC /* AlertActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActions.swift; sourceTree = "<group>"; };
@@ -85,6 +87,9 @@
 		1678943321F4BF7F002703FD /* ReSwiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSwiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678943721F4BF7F002703FD /* ReSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftDemoTests.swift; sourceTree = "<group>"; };
 		1678943921F4BF7F002703FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		168A77B4222EFC6200DE50CD /* RestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRequest.swift; sourceTree = "<group>"; };
+		168A77B6222EFCB000DE50CD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		168A77B8222EFFAC00DE50CD /* SampleRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRestClient.swift; sourceTree = "<group>"; };
 		16BB54E021F666CB00E6B4B9 /* FlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowManager.swift; sourceTree = "<group>"; };
 		16E1D49E21F542A600C588C3 /* Container+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Dependencies.swift"; sourceTree = "<group>"; };
 		1AE4D9A53EDD0539AEF54DC2 /* Pods-ReSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftDemo/Pods-ReSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +97,11 @@
 		6952431441FE19F05A690314 /* Pods-ReSwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftDemoTests/Pods-ReSwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7190D372A2EE768C699DD834 /* Pods-ReSwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftDemoTests/Pods-ReSwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		73871C5F75EC87BA949A7D49 /* Pods_ReSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD0397B222EAF2200BE14AA /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		7BD0397D222EAF7600BE14AA /* Codable+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Json.swift"; sourceTree = "<group>"; };
+		7BD0397F222EB02000BE14AA /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		7BD03983222EB2C300BE14AA /* Data+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Json.swift"; sourceTree = "<group>"; };
+		7BD03985222EB9A600BE14AA /* FakeRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRestClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				163B3CC3220A082F00F6BACC /* Middlewares.swift */,
-				163B3CC7220A08C900F6BACC /* LoggerMiddleware.swift */,
 				163B3CC5220A085700F6BACC /* ApiMiddleware.swift */,
+				163B3CC7220A08C900F6BACC /* LoggerMiddleware.swift */,
 			);
 			path = Middlewares;
 			sourceTree = "<group>";
@@ -167,12 +177,9 @@
 		164962D521F4C5C40063C543 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				163B3CB8220A00E900F6BACC /* ApiRequest.swift */,
-				161043EA220B5345008778D9 /* ApiRequestWithResponse.swift */,
-				161043EC220B5351008778D9 /* ApiRequestNoResponse.swift */,
-				163B3CBA220A010100F6BACC /* ApiRequestError.swift */,
-				164962EF21F4D85F0063C543 /* SessionActions.swift */,
 				163B3CC0220A054E00F6BACC /* AlertActions.swift */,
+				163B3CB8220A00E900F6BACC /* ApiRequest.swift */,
+				164962EF21F4D85F0063C543 /* SessionActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -180,10 +187,14 @@
 		164962EA21F4D5B60063C543 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				164962EB21F4D5BF0063C543 /* Flow.swift */,
-				1630FF8621F66EB8004928DB /* ErrorMessage.swift */,
-				163B3CBC220A019A00F6BACC /* Session.swift */,
 				163B3CBE220A025D00F6BACC /* Credentials.swift */,
+				1630FF8621F66EB8004928DB /* ErrorMessage.swift */,
+				7BD0397F222EB02000BE14AA /* ErrorResponse.swift */,
+				164962EB21F4D5BF0063C543 /* Flow.swift */,
+				7BD0397B222EAF2200BE14AA /* HttpMethod.swift */,
+				168A77B6222EFCB000DE50CD /* NetworkClient.swift */,
+				168A77B4222EFC6200DE50CD /* RestRequest.swift */,
+				163B3CBC220A019A00F6BACC /* Session.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,6 +249,8 @@
 			children = (
 				16E1D49E21F542A600C588C3 /* Container+Dependencies.swift */,
 				1630FF8821F67019004928DB /* ViewController+Alert.swift */,
+				7BD0397D222EAF7600BE14AA /* Codable+Json.swift */,
+				7BD03983222EB2C300BE14AA /* Data+Json.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -245,8 +258,10 @@
 		16E1D4A021F5446000C588C3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				164962F921F4E5BD0063C543 /* SessionManager.swift */,
+				7BD03985222EB9A600BE14AA /* FakeRestClient.swift */,
 				16BB54E021F666CB00E6B4B9 /* FlowManager.swift */,
+				168A77B8222EFFAC00DE50CD /* SampleRestClient.swift */,
+				164962F921F4E5BD0063C543 /* SessionManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -495,32 +510,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				163B3CBB220A010100F6BACC /* ApiRequestError.swift in Sources */,
 				164962DF21F4CF6B0063C543 /* SessionState.swift in Sources */,
+				7BD03984222EB2C300BE14AA /* Data+Json.swift in Sources */,
 				164962D121F4C4990063C543 /* MainViewController.swift in Sources */,
 				1678942521F4BF7D002703FD /* LoginViewController.swift in Sources */,
 				163B3CC8220A08C900F6BACC /* LoggerMiddleware.swift in Sources */,
 				163B3CC4220A082F00F6BACC /* Middlewares.swift in Sources */,
 				164962F021F4D85F0063C543 /* SessionActions.swift in Sources */,
+				7BD0397E222EAF7600BE14AA /* Codable+Json.swift in Sources */,
 				163B3CB9220A00E900F6BACC /* ApiRequest.swift in Sources */,
 				164962EE21F4D6090063C543 /* FlowReducer.swift in Sources */,
 				1678942321F4BF7D002703FD /* AppDelegate.swift in Sources */,
+				168A77B7222EFCB000DE50CD /* NetworkClient.swift in Sources */,
 				16BB54E121F666CB00E6B4B9 /* FlowManager.swift in Sources */,
+				7BD03986222EB9A600BE14AA /* FakeRestClient.swift in Sources */,
+				168A77B5222EFC6200DE50CD /* RestRequest.swift in Sources */,
 				164962D721F4C5D00063C543 /* AppState.swift in Sources */,
 				164962E721F4D3660063C543 /* FlowState.swift in Sources */,
 				163B3CC1220A054E00F6BACC /* AlertActions.swift in Sources */,
 				1630FF8921F67019004928DB /* ViewController+Alert.swift in Sources */,
 				164962E121F4D0430063C543 /* SessionReducer.swift in Sources */,
-				161043ED220B5351008778D9 /* ApiRequestNoResponse.swift in Sources */,
 				164962D921F4C5F20063C543 /* AppReducer.swift in Sources */,
 				163B3CBF220A025D00F6BACC /* Credentials.swift in Sources */,
 				16E1D49F21F542A600C588C3 /* Container+Dependencies.swift in Sources */,
+				168A77B9222EFFAC00DE50CD /* SampleRestClient.swift in Sources */,
 				164962EC21F4D5BF0063C543 /* Flow.swift in Sources */,
 				163B3CC6220A085700F6BACC /* ApiMiddleware.swift in Sources */,
 				163B3CBD220A019A00F6BACC /* Session.swift in Sources */,
+				7BD0397C222EAF2200BE14AA /* HttpMethod.swift in Sources */,
+				7BD03980222EB02000BE14AA /* ErrorResponse.swift in Sources */,
 				164962FA21F4E5BD0063C543 /* SessionManager.swift in Sources */,
 				1630FF8721F66EB8004928DB /* ErrorMessage.swift in Sources */,
-				161043EB220B5345008778D9 /* ApiRequestWithResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,7 +704,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JT56B63DU5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -704,7 +724,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JT56B63DU5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -4,7 +4,7 @@ import ReSwift
 enum Reducers {
     
     static func appReducer(action: Action, state: AppState?) -> AppState {
-        var error = (action as? ApiRequestError)?.error ?? state?.error
+        var error = (action as? AlertActions.DisplayError)?.error ?? state?.error
         
         if action is AlertActions.ErrorDismissed {
             error = nil
