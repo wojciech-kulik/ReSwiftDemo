@@ -18,7 +18,6 @@ extension Container {
     }
     
     private func registerManagers() {
-        self.autoregister(SessionManager.self, initializer: SessionManager.init).inObjectScope(.container)
         self.autoregister(FlowManager.self, initializer: FlowManager.init).inObjectScope(.container)
         
         #warning("You can replace this mocked implementation with real one")

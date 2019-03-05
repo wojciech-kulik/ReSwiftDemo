@@ -14,9 +14,8 @@ enum SessionActions {
             super.init(resource: "api/login", method: .post, json: credentials.toJson())
         }
         
-        override func onSuccess(response: Session?) -> [Action] {
-            guard let session = response else { return [] }
-            return [SetSession(session: session)]
+        override func onSuccess(response: Session) -> [Action] {
+            return [SetSession(session: response)]
         }
     }
     
@@ -25,7 +24,7 @@ enum SessionActions {
             super.init(resource: "api/logout", method: .get)
         }
         
-        override func onSuccess(response: VoidResponse?) -> [Action] {
+        override func onSuccess(response: VoidResponse) -> [Action] {
             return [NoSession()]
         }
     }

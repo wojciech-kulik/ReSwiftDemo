@@ -6,11 +6,10 @@ import SwinjectStoryboard
 class FlowManager: StoreSubscriber {
 	
     private let store: Store<AppState>
-    private let sessionManager: SessionManager
     
-    init(store: Store<AppState>, sessionManager: SessionManager) {
+    init(store: Store<AppState>) {
         self.store = store
-        self.sessionManager = sessionManager
+        store.dispatch(RestoreState())
         self.subscribe()
     }
     
@@ -23,9 +22,7 @@ class FlowManager: StoreSubscriber {
     func newState(state: FlowState) {
         print("Set Flow: \(state.flow)")
         
-        if state.flow == .splashScreen {
-            self.restoreState()
-        } else if state.flow == .signIn {
+        if state.flow == .signIn {
             self.showScreen(name: "LoginViewController")
         } else if state.flow == .dashboard {
             self.showScreen(name: "MainViewController")
@@ -39,14 +36,6 @@ class FlowManager: StoreSubscriber {
         if let window = UIApplication.shared.windows.first {
             window.rootViewController = rootController
             window.makeKeyAndVisible()
-        }
-    }
-    
-    private func restoreState() {
-        if let session = self.sessionManager.loadSession() {
-            self.store.dispatch(SessionActions.SetSession(session: session))
-        } else {
-            self.store.dispatch(SessionActions.NoSession())
         }
     }
 }

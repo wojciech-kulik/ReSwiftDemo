@@ -25,7 +25,7 @@
 		164962EC21F4D5BF0063C543 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962EB21F4D5BF0063C543 /* Flow.swift */; };
 		164962EE21F4D6090063C543 /* FlowReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962ED21F4D6090063C543 /* FlowReducer.swift */; };
 		164962F021F4D85F0063C543 /* SessionActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962EF21F4D85F0063C543 /* SessionActions.swift */; };
-		164962FA21F4E5BD0063C543 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962F921F4E5BD0063C543 /* SessionManager.swift */; };
+		164962FA21F4E5BD0063C543 /* AuthMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164962F921F4E5BD0063C543 /* AuthMiddleware.swift */; };
 		1678942321F4BF7D002703FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678942221F4BF7D002703FD /* AppDelegate.swift */; };
 		1678942521F4BF7D002703FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678942421F4BF7D002703FD /* LoginViewController.swift */; };
 		1678942821F4BF7D002703FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678942621F4BF7D002703FD /* Main.storyboard */; };
@@ -35,6 +35,7 @@
 		168A77B5222EFC6200DE50CD /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77B4222EFC6200DE50CD /* RestRequest.swift */; };
 		168A77B7222EFCB000DE50CD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77B6222EFCB000DE50CD /* NetworkClient.swift */; };
 		168A77B9222EFFAC00DE50CD /* SampleRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77B8222EFFAC00DE50CD /* SampleRestClient.swift */; };
+		168A77BB222F089B00DE50CD /* RestoreState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77BA222F089B00DE50CD /* RestoreState.swift */; };
 		16BB54E121F666CB00E6B4B9 /* FlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB54E021F666CB00E6B4B9 /* FlowManager.swift */; };
 		16E1D49F21F542A600C588C3 /* Container+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1D49E21F542A600C588C3 /* Container+Dependencies.swift */; };
 		2314A931BEE8A2FAD387670C /* Pods_ReSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73871C5F75EC87BA949A7D49 /* Pods_ReSwiftDemo.framework */; };
@@ -76,7 +77,7 @@
 		164962EB21F4D5BF0063C543 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		164962ED21F4D6090063C543 /* FlowReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowReducer.swift; sourceTree = "<group>"; };
 		164962EF21F4D85F0063C543 /* SessionActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionActions.swift; sourceTree = "<group>"; };
-		164962F921F4E5BD0063C543 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		164962F921F4E5BD0063C543 /* AuthMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMiddleware.swift; sourceTree = "<group>"; };
 		1678941F21F4BF7D002703FD /* ReSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678942221F4BF7D002703FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1678942421F4BF7D002703FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		168A77B4222EFC6200DE50CD /* RestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRequest.swift; sourceTree = "<group>"; };
 		168A77B6222EFCB000DE50CD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		168A77B8222EFFAC00DE50CD /* SampleRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRestClient.swift; sourceTree = "<group>"; };
+		168A77BA222F089B00DE50CD /* RestoreState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreState.swift; sourceTree = "<group>"; };
 		16BB54E021F666CB00E6B4B9 /* FlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowManager.swift; sourceTree = "<group>"; };
 		16E1D49E21F542A600C588C3 /* Container+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Dependencies.swift"; sourceTree = "<group>"; };
 		1AE4D9A53EDD0539AEF54DC2 /* Pods-ReSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftDemo/Pods-ReSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				163B3CC3220A082F00F6BACC /* Middlewares.swift */,
 				163B3CC5220A085700F6BACC /* ApiMiddleware.swift */,
+				164962F921F4E5BD0063C543 /* AuthMiddleware.swift */,
 				163B3CC7220A08C900F6BACC /* LoggerMiddleware.swift */,
 			);
 			path = Middlewares;
@@ -179,6 +182,7 @@
 			children = (
 				163B3CC0220A054E00F6BACC /* AlertActions.swift */,
 				163B3CB8220A00E900F6BACC /* ApiRequest.swift */,
+				168A77BA222F089B00DE50CD /* RestoreState.swift */,
 				164962EF21F4D85F0063C543 /* SessionActions.swift */,
 			);
 			path = Actions;
@@ -259,9 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				7BD03985222EB9A600BE14AA /* FakeRestClient.swift */,
-				16BB54E021F666CB00E6B4B9 /* FlowManager.swift */,
 				168A77B8222EFFAC00DE50CD /* SampleRestClient.swift */,
-				164962F921F4E5BD0063C543 /* SessionManager.swift */,
+				16BB54E021F666CB00E6B4B9 /* FlowManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				164962D721F4C5D00063C543 /* AppState.swift in Sources */,
 				164962E721F4D3660063C543 /* FlowState.swift in Sources */,
 				163B3CC1220A054E00F6BACC /* AlertActions.swift in Sources */,
+				168A77BB222F089B00DE50CD /* RestoreState.swift in Sources */,
 				1630FF8921F67019004928DB /* ViewController+Alert.swift in Sources */,
 				164962E121F4D0430063C543 /* SessionReducer.swift in Sources */,
 				164962D921F4C5F20063C543 /* AppReducer.swift in Sources */,
@@ -539,7 +543,7 @@
 				163B3CBD220A019A00F6BACC /* Session.swift in Sources */,
 				7BD0397C222EAF2200BE14AA /* HttpMethod.swift in Sources */,
 				7BD03980222EB02000BE14AA /* ErrorResponse.swift in Sources */,
-				164962FA21F4E5BD0063C543 /* SessionManager.swift in Sources */,
+				164962FA21F4E5BD0063C543 /* AuthMiddleware.swift in Sources */,
 				1630FF8721F66EB8004928DB /* ErrorMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
