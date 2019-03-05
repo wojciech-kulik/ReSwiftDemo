@@ -1,7 +1,7 @@
 import Foundation
 import ReSwift
 
-protocol RestRequest {
+protocol HttpRequest {
     var resource: String { get }
     var method: HttpMethod { get }
     var json: Data? { get }

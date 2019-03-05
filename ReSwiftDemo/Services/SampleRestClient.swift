@@ -9,7 +9,7 @@ class SampleRestClient: NetworkClient {
         self.serverUrl = serverUrl.trimmingCharacters(in: ["/"])
     }
     
-    func request(_ request: RestRequest, dispatch: @escaping DispatchFunction) {
+    func request(_ request: HttpRequest, dispatch: @escaping DispatchFunction) {
         
         guard let url = URL(string: "\(self.serverUrl)/\(request.resource)") else { return }
         

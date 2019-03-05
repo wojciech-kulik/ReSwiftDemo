@@ -4,7 +4,7 @@ import ReSwift
 // For requests which does not return any payload
 struct VoidResponse: Codable { }
 
-class ApiRequest<T:Codable>: Action, RestRequest {
+class ApiRequest<T:Codable>: Action, HttpRequest {
     let resource: String
     let method: HttpMethod
     let json: Data?
@@ -23,7 +23,7 @@ class ApiRequest<T:Codable>: Action, RestRequest {
         return [AlertActions.DisplayError(title: "Error", message: response.message, buttons: ["OK"])]
     }
     
-    // MARK: RestRequest
+    // MARK: HttpRequest
     func onSuccess(response: Data?) -> [Action] {
         if let response = response?.toObject(T.self) {
             return self.onSuccess(response: response)

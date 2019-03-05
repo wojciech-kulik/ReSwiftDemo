@@ -32,7 +32,7 @@
 		1678942A21F4BF7F002703FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1678942921F4BF7F002703FD /* Assets.xcassets */; };
 		1678942D21F4BF7F002703FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678942B21F4BF7F002703FD /* LaunchScreen.storyboard */; };
 		1678943821F4BF7F002703FD /* ReSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678943721F4BF7F002703FD /* ReSwiftDemoTests.swift */; };
-		168A77B5222EFC6200DE50CD /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77B4222EFC6200DE50CD /* RestRequest.swift */; };
+		168A77B5222EFC6200DE50CD /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77B4222EFC6200DE50CD /* HttpRequest.swift */; };
 		168A77B7222EFCB000DE50CD /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77B6222EFCB000DE50CD /* NetworkClient.swift */; };
 		168A77B9222EFFAC00DE50CD /* SampleRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77B8222EFFAC00DE50CD /* SampleRestClient.swift */; };
 		168A77BB222F089B00DE50CD /* RestoreState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A77BA222F089B00DE50CD /* RestoreState.swift */; };
@@ -88,7 +88,7 @@
 		1678943321F4BF7F002703FD /* ReSwiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSwiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678943721F4BF7F002703FD /* ReSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftDemoTests.swift; sourceTree = "<group>"; };
 		1678943921F4BF7F002703FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		168A77B4222EFC6200DE50CD /* RestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRequest.swift; sourceTree = "<group>"; };
+		168A77B4222EFC6200DE50CD /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		168A77B6222EFCB000DE50CD /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		168A77B8222EFFAC00DE50CD /* SampleRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRestClient.swift; sourceTree = "<group>"; };
 		168A77BA222F089B00DE50CD /* RestoreState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreState.swift; sourceTree = "<group>"; };
@@ -196,8 +196,8 @@
 				7BD0397F222EB02000BE14AA /* ErrorResponse.swift */,
 				164962EB21F4D5BF0063C543 /* Flow.swift */,
 				7BD0397B222EAF2200BE14AA /* HttpMethod.swift */,
+				168A77B4222EFC6200DE50CD /* HttpRequest.swift */,
 				168A77B6222EFCB000DE50CD /* NetworkClient.swift */,
-				168A77B4222EFC6200DE50CD /* RestRequest.swift */,
 				163B3CBC220A019A00F6BACC /* Session.swift */,
 			);
 			path = Models;
@@ -527,7 +527,7 @@
 				168A77B7222EFCB000DE50CD /* NetworkClient.swift in Sources */,
 				16BB54E121F666CB00E6B4B9 /* FlowManager.swift in Sources */,
 				7BD03986222EB9A600BE14AA /* FakeRestClient.swift in Sources */,
-				168A77B5222EFC6200DE50CD /* RestRequest.swift in Sources */,
+				168A77B5222EFC6200DE50CD /* HttpRequest.swift in Sources */,
 				164962D721F4C5D00063C543 /* AppState.swift in Sources */,
 				164962E721F4D3660063C543 /* FlowState.swift in Sources */,
 				163B3CC1220A054E00F6BACC /* AlertActions.swift in Sources */,

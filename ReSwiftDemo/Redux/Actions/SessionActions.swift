@@ -11,7 +11,9 @@ enum SessionActions {
     
     class SignIn: ApiRequest<Session> {
         init(credentials: Credentials) {
-            super.init(resource: "api/login", method: .post, json: credentials.toJson())
+            super.init(resource: "api/login",
+                       method: .post,
+                       json: credentials.toJson())
         }
         
         override func onSuccess(response: Session) -> [Action] {

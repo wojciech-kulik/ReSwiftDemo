@@ -9,7 +9,7 @@ extension Middlewares {
                 return { action in
                     next(action)
                     
-                    guard let request = action as? RestRequest else { return }
+                    guard let request = action as? HttpRequest else { return }
                     restClient.request(request, dispatch: dispatch)
                 }
             }

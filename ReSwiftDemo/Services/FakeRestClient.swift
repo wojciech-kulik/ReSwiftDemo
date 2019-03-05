@@ -3,7 +3,7 @@ import ReSwift
 
 class FakeRestClient: NetworkClient {
 	
-    func request(_ request: RestRequest, dispatch: @escaping DispatchFunction) {
+    func request(_ request: HttpRequest, dispatch: @escaping DispatchFunction) {
         
         // BACKEND SIMULATION
         DispatchQueue.main.asyncAfter(wallDeadline: .now() + 2) {
