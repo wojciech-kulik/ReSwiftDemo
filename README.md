@@ -1,3 +1,5 @@
+<a href="https://www.buymeacoffee.com/WojciechKulik" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
 # ReSwiftDemo
 Simple example of authentication using Redux state container powered by ReSwift library.  
 
